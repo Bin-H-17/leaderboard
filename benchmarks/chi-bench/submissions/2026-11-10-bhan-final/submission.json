@@ -1,0 +1,61 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "bhan-final",
+    "team": "Bin_Han",
+    "contact": "henry_bin@163.com",
+    "agent": "openai-agents",
+    "model": "deepseek-flash",
+    "notes": "openai-agents harness over OpenAI-protocol chat_completions against a DeepSeek endpoint.\nThe frozen configuration is candidate system prompt v66 with a 120-turn agent budget,\nboth set in the image; no orchestrator retries beyond max_retries=1 and n_attempts=1.\nPer-domain public evidence was produced by the prompt revision that generated it: care\nmanagement on v64 (the refusal rule), provider on v66 (the site-of-service rule), payer\nutilisation management on v63.\n",
+    "submitted_at": "2026-11-10T19:45:52Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.72,
+      "mean_cost_usd": 0.0,
+      "mean_walltime_s": 140.34046149333332
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.48,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 103.00742668000001
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.68,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 139.95177788
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 1.0,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 178.06217992
+      }
+    },
+    "mean_cost_usd": 0.0,
+    "mean_walltime_s": 140.34046149333332
+  },
+  "provenance": {
+    "chi_bench_git_sha": null,
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0"
+  }
+}

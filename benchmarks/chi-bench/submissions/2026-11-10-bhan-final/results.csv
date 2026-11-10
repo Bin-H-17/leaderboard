@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,bhan-final,Bin_Han,openai-agents,deepseek-flash,overall,0.72,75,75,0.0,140.34046149333332,2026-11-10T19:45:52Z
+chi-bench,chi-bench-v1.0.0,bhan-final,Bin_Han,openai-agents,deepseek-flash,pa_provider,0.48,25,25,0.0,103.00742668000001,2026-11-10T19:45:52Z
+chi-bench,chi-bench-v1.0.0,bhan-final,Bin_Han,openai-agents,deepseek-flash,pa_um,0.68,25,25,0.0,139.95177788,2026-11-10T19:45:52Z
+chi-bench,chi-bench-v1.0.0,bhan-final,Bin_Han,openai-agents,deepseek-flash,cm,1.0,25,25,0.0,178.06217992,2026-11-10T19:45:52Z

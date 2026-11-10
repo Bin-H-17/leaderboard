@@ -1,0 +1,31 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: bhan-final
+  team: Bin_Han
+  contact: henry_bin@163.com
+  agent: openai-agents
+  model: deepseek-flash
+  notes: |
+    openai-agents harness over OpenAI-protocol chat_completions against a DeepSeek endpoint.
+    The frozen configuration is candidate system prompt v66 with a 120-turn agent budget,
+    both set in the image; no orchestrator retries beyond max_retries=1 and n_attempts=1.
+    Per-domain public evidence was produced by the prompt revision that generated it: care
+    management on v64 (the refusal rule), provider on v66 (the site-of-service rule), payer
+    utilisation management on v63.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 3
+  max_retries: 1
+  timeout_multiplier: 6.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+
+paths:
+  data_root: data
+  output_root: logs/submissions/bhan-final
