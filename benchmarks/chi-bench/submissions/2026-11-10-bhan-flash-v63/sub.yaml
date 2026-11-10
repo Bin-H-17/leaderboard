@@ -1,0 +1,29 @@
+# Bin_Han chi-bench — pa_provider + pa_um with deepseek-flash + v63 prompt
+schema: chi-bench/submission/v1
+
+submission:
+  id: bhan-flash-v63
+  team: Bin_Han
+  contact: henry_bin@163.com
+  agent: openai-agents
+  model: deepseek-flash
+  notes: |
+    openai-agents harness via chat_completions against an OpenAI-protocol endpoint.
+    Candidate system prompt v63 and a 120-turn agent budget are baked into chi-bench:v63.
+    n_attempts=1.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 2
+  max_retries: 1
+  timeout_multiplier: 6.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um]
+
+paths:
+  data_root: data
+  output_root: logs/submissions/bhan-flash-v63

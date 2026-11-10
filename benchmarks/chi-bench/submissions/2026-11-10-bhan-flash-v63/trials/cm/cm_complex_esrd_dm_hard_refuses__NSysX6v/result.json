@@ -1,0 +1,117 @@
+{
+    "id": "5603cac2-d4ea-499a-987a-b854d69a81a1",
+    "task_name": "actava-ai/cm_complex_esrd_dm_hard_refuses_001",
+    "trial_name": "cm_complex_esrd_dm_hard_refuses__NSysX6v",
+    "trial_uri": "file:///root/chi-bench/logs/submissions/bhan-flash-cm-v63/cm/bhan-flash-cm-v63__cm/cm_complex_esrd_dm_hard_refuses__NSysX6v",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_complex_esrd_dm_hard_refuses_001"
+    },
+    "source": "tasks",
+    "task_checksum": "adf00395838d924695721b0fa2c1a3374d6135c64fb4f307265e563a271641e3",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_complex_esrd_dm_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "cm_complex_esrd_dm_hard_refuses__NSysX6v",
+        "trials_dir": "logs/submissions/bhan-flash-cm-v63/cm/bhan-flash-cm-v63__cm",
+        "install_only": false,
+        "timeout_multiplier": 6.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "deepseek-flash",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://api.deepseek.com/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "f9681561-a17b-4a8c-a7d4-85b287ca68bb"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "deepseek-flash",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1264467,
+        "n_cache_tokens": 1209728,
+        "n_output_tokens": 12021,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-11-10T14:49:36.653420Z",
+    "finished_at": "2026-11-10T14:51:59.986950Z",
+    "environment_setup": {
+        "started_at": "2026-11-10T14:49:36.657117Z",
+        "finished_at": "2026-11-10T14:50:13.303447Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-10T14:50:13.303471Z",
+        "finished_at": "2026-11-10T14:50:14.082345Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-10T14:50:14.082418Z",
+        "finished_at": "2026-11-10T14:51:55.401099Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-10T14:51:56.418490Z",
+        "finished_at": "2026-11-10T14:51:59.444551Z"
+    },
+    "step_results": null
+}

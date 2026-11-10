@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "bhan-flash-v63",
+    "team": "Bin_Han",
+    "contact": "henry_bin@163.com",
+    "agent": "openai-agents",
+    "model": "deepseek-flash",
+    "notes": "openai-agents harness over OpenAI-protocol chat_completions against a DeepSeek endpoint.\nCandidate system prompt v63 (mandatory per-domain record chains) and a 120-turn agent\nbudget are baked into the image. n_attempts=1.\n",
+    "submitted_at": "2026-11-10T16:55:56Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.6266666666666667,
+      "mean_cost_usd": 0.0,
+      "mean_walltime_s": 185.28688697333334
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.44,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 129.24184440000002
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.68,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 139.95177788
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.76,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 286.66703864
+      }
+    },
+    "mean_cost_usd": 0.0,
+    "mean_walltime_s": 185.28688697333334
+  },
+  "provenance": {
+    "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+    "image_digest": "sha256:2c69eb62cb305c3d26cf8e5da6c7a54e50871f6af5f85799775a5a0ddddb99e3",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "docker",
+    "started_at": "2026-11-10T15:35:48Z",
+    "finished_at": "2026-11-10T16:48:22Z",
+    "host": "BHan",
+    "python_version": "3.12.14",
+    "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  }
+}
